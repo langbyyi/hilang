@@ -1,0 +1,193 @@
+# 全局
+theme_color: '#5e72e4' # 主题色
+show_customize_theme_color_picker: true # 允许用户自定义主题色
+darkmode_autoswitch: false # 自动切换夜间模式，可选: false 默认使用日间, alwayson 默认使用夜间, system 跟随系统, time 随时间切换
+enable_amoled_dark: false # 夜间模式样式，false 为灰黑，true 则为暗黑
+card_radius: 4 # 默认卡片圆角大小
+card_shadow: # 默认卡片阴影大小，可选 small 和 big
+font: sans-serif # 默认字体，可选: sans-serif 无衬线字体, serif 衬线字体
+enable_headroom: false # 滚动时是否自动折叠顶栏
+
+# 顶栏
+toolbar_icon: '' # 顶栏图标图片地址，留空则不显示
+toolbar_icon_link: '/' # 顶栏图标链接，点击时跳转
+toolbar_title: '渐怀的博客' # 顶栏标题，留空则跟随博客标题
+toolbar_menu: # 顶栏菜单，支持二级菜单
+  '<svg class="icon" aria-hidden="true"><use xlink:href="#icon-fengzheng"></use></svg>文章':
+    全部文章: /categories/文章/
+    学习笔记: /categories/文章/学习笔记/
+    工具资源: /categories/文章/工具资源/
+    漏洞分析: /categories/文章/漏洞分析/
+    代码审计: /categories/文章/代码审计/
+  '<svg class="icon" aria-hidden="true"><use xlink:href="#icon-zhifeiji"></use></svg>关于':
+    用户协议: /agreement/
+    隐私政策: /privacy-policy/
+    免责声明: /disclaimer/
+
+# Banner
+banner_title: '从新手到大神的学习-blog' # Banner 标题，留空则跟随博客标题
+enable_banner_title_typing_effect: true # 是否启用 Banner 打字效果
+banner_typing_effect_interval: 100 # Banner 打字间隔时长，单位 ms/字
+banner_subtitle: 'Powered by 渐怀' # Banner 子标题，留空则不显示
+banner_background_url: '/assets/img/site-background.png' # Banner 背景图，留空则不显示
+banner_background_hide_shapes: false # 是否隐藏 Banner 背景圆形
+banner_background_color_type: 'shape-primary' # Banner 渐变样式，Banner 背景图会覆盖该选项，可选值: shape-primary, shape-default, shape-dark, bg-gradient-success, bg-gradient-info, bg-gradient-warning, bg-gradient-danger
+
+# 侧栏
+sidebar_banner_title: '渐怀的博客' # 侧栏标题，留空则跟随博客标题
+sidebar_banner_subtitle: '--hitokoto--' # 侧栏子标题，留空则不显示，设为 --hitokoto-- 调用一言
+sidebar_announcement: '<p>👋 关于本站</p><p>专注网络安全技术分享，包含漏洞分析、工具教程、攻防案例等干货。</p><p>如需交流或投稿，欢迎邮件联系：<br><a href="mailto:support@hilang.cloud">support@hilang.cloud</a></p>' # 侧栏公告，留空则不显示
+leftbar_menu: false # 侧栏顶部菜单，支持无限层级菜单嵌套
+sidebar_auther_image: '/assets/img/icon.png' # 侧栏作者头像
+sidebar_auther_name: '渐怀的博客' # 侧栏作者名，留空则跟随博客名
+leftbar_author_links: # 侧栏作者链接列表
+  文章: /categories/文章/
+  学习笔记: /categories/文章/学习笔记/
+  工具资源: /categories/文章/工具资源/
+  漏洞分析: /categories/文章/漏洞分析/
+  代码审计: /categories/文章/代码审计/
+leftbar_friend_links: # 侧栏友链列表
+show_headindex_number: false # 侧栏文章目录是否显示章节编号
+
+# 文章
+excerpt: true # 是否显示文章摘要，为 false 则显示全文
+first_image_as_thumbnail: false # 自动取文章第一张图为特色图片
+article_meta: time|categories|words|readingtime # 文章 Meta 信息列表，用竖线分隔开，可选: time 发布时间, edittime 编辑时间, categories 分类, read 阅读量，words 字数, readingtime 预计阅读时间
+reading_speed_cn: 300 # 每分钟中文阅读字数，用于计算预计阅读时间
+reading_speed_en: 160 # 每分钟英文阅读单词数，用于计算预计阅读时间
+donate_qrcode_url: '' # 赞赏二维码地址，留空则不显示
+additional_content_after_post: '' # 文末追加信息，支持 HTML，留空则不显示
+article_header_style: default # 文章内小标题样式，可选值: default, 1, 2
+
+# 背景
+page_background_url: '/assets/img/site-background.png' # 页面背景地址，留空则不设页面背景
+page_background_dark_url: '/assets/img/site-background.png' # 夜间模式页面背景地址，留空则跟随日间模式
+page_background_opacity: 1 # 页面背景不透明度，0 ~ 1的小数
+transparent_banner: true # Banner 透明化，如果设置了背景以后推荐开启该选项
+show_toolbar_mask: false # 顶栏遮罩，如背景图片影响了顶栏文字显示对比度建议开启
+
+# 浮动操作按钮
+fab_show_darkmode_button: false # 是否显示日夜间模式切换浮动操作按钮
+fab_show_settings_button: true # 是否显示博客设置浮动操作按钮
+fab_show_gotocomment_button: false # 是否显示跳转到评论区浮动操作按钮
+
+# 平滑滚动
+smoothscroll: disabled # 可选值: disabled, 1, 1-pulse, 2, 3
+
+# Zoomify
+enable_zoomify: true # 是否启用 Zoomify 图片放大预览
+zoomify_duration: 200 # 图片放大动画时长
+zoomify_easing: cubic-bezier(0.4,0,0,1) # 图片放大动画曲线
+zoomify_scale: 0.9 # 图片放大后最大占页面大小的百分比, 0 ~ 1 的小数
+
+# Lazyload
+enable_lazyload: true # 是否启用 Lazyload
+lazyload_threshold: 800 # 图片滚动到距离页面底部多少像素开始加载
+lazyload_effect: fadeIn # 图片显示动画
+lazyload_loading_style: 1 # 图片加载的动画, 可选值 1 ~ 11, none
+
+# Pangu.js
+enable_pangu: false # 是否启用 Pangu.js 自动用空格分隔文章中的中英文字符
+
+# 其他
+pjax_disabled: false # 是否禁用 Pjax
+enable_into_article_animation: false # 是否启用进入文章动画
+enable_mobile_scale: false # 是否允许手机端缩放页面
+
+# 页脚
+footer_html: >
+  <div class="wiiuii_layout">
+    <svg class="editorial" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none">
+      <defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18v44h-352z"/></defs>
+      <g class="parallax">
+        <use href="#gentle-wave" x="50" y="0" fill="#4579e2"/>
+        <use href="#gentle-wave" x="50" y="3" fill="#3461c1"/>
+        <use href="#gentle-wave" x="50" y="6" fill="#2d55aa"/>
+      </g>
+    </svg>
+  </div>
+  <div id="system-stats" class="system-stats-container">
+    <div class="stats-content">
+      <span id="system-running-time" class="running-time-text"></span>
+    </div>
+  </div>
+  <div class="github-badge">
+    <span class="badge-subject bg-brightgreen"><a style="color:#fff" href="/archives/">站点地图</a></span> -
+    <span class="badge-subject bg-green-dark"><a style="color:#fff" href="/agreement/">用户协议</a></span> -
+    <span class="badge-subject bg-orange"><a style="color:#fff" href="/privacy-policy/">隐私政策</a></span> -
+    <span class="badge-subject bg-blue"><a style="color:#fff" href="/disclaimer/">免责声明</a></span>
+  </div>
+  <div class="footer-notice">
+    本站为个人网络安全知识博客，所发布的含修改补丁、注册工具、软件相关内容及文章，仅提供给用户用于学习和研究目的。<br>
+    严禁将上述内容用于商业用途或任何非法活动，由此产生的一切法律责任及后果，均由使用者自行承担。<br>
+    本站部分信息来源于网络，若涉及版权争议，与本站无涉。如您下载本站内容，应在下载后24小时内从设备中彻底删除。<br>
+    访问或下载本站内容，即视为您已阅读并同意上述全部条款。
+  </div>
+
+# 数学公式
+math_render: '' # 数学公式渲染方案，留空则不渲染，可选值: mathjax3, mathjax2, katex
+mathjax_cdn_url: //cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js # Mathjax 3 CDN 地址
+argon_mathjax_v2_cdn_url: //cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-AMS_HTML # Mathjax 2 CDN 地址
+katex_cdn_url: //cdn.jsdelivr.net/npm/katex@0.11.1/dist/ # Katex CDN 地址
+
+# 代码高亮
+enable_code_highlight: false # 是否启用 Highlight.js 代码高亮
+code_theme: vs2015 # 代码高亮主题
+
+# 脚本
+custom_html_head: '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/assets/css/hilang-argon.css?v=20260601"><link rel="stylesheet" href="/assets/css/hilang-footer.css?v=20260530"><link rel="stylesheet" href="/assets/js/ts.css"><script src="/assets/js/font_4964662_hcubdxwsr88.js"></script>' # 页头脚本，HTML
+custom_html_foot: >
+  <div class="usercm">
+    <ul>
+      <li><a href="/"><i class="fa fa-home fa-fw"></i><span>首页</span></a></li>
+      <li><a href="javascript:void(0);" onclick="getSelect();"><i class="fa fa-file fa-fw"></i><span>复制</span></a></li>
+      <li><a href="javascript:void(0);" onclick="bingSearch();"><i class="fa fa-search fa-fw"></i><span>Bing一下</span></a></li>
+      <li><a href="javascript:history.go(1);"><i class="fa fa-arrow-right fa-fw"></i><span>前进</span></a></li>
+      <li><a href="javascript:history.go(-1);"><i class="fa fa-arrow-left fa-fw"></i><span>后退</span></a></li>
+      <li style="border-bottom:1px solid gray"><a href="javascript:window.location.reload();"><i class="fa fa-refresh fa-fw"></i><span>刷新</span></a></li>
+      <li><a href="/agreement/"><i class="fa fa-pencil fa-fw"></i><span>用户协议</span></a></li>
+    </ul>
+  </div>
+  <script src="/assets/js/mobile-detect.js"></script>
+  <script src="/assets/js/layer.min.js" defer></script>
+  <script src="/assets/js/sweetalert.min.js" defer></script>
+  <script src="/assets/js/ts.js" defer></script>
+  <script src="/assets/js/hilang-footer.js?v=20260530"></script>
+
+# 评论
+gitalk:
+  enable: false # 是否启用 Gitalk 评论系统
+  owner: ''
+  repo: ''
+  admin: ''
+  clientID: ''
+  clientSecret: ''
+giscus: # https://giscus.app/zh-CN
+  enable: false # 是否启用 Giscus 评论系统
+  repo: ''
+  repo_id: ''
+  category: ''
+  category_id: ''
+  mapping: 'pathname'
+  input_position: 'top'
+  theme: 'light'
+  lang: 'zh-CN'
+waline: # https://waline.js.org/guide/get-started.html
+  enable: false # 是否启用 Waline 评论系统
+  server_url: '' 
+twikoo: # https://twikoo.js.org
+  enable: false # 是否启用 Twikoo 评论系统
+  envID: ' '
+  lang: 'zh-CN'
+
+# 分析
+# 百度统计
+baidu_analytics:
+  enable: false # 是否启用 百度统计
+  id: '' # hm.js? 后的一串字符
+
+# gtag 谷歌全局网络代码
+# Google Analytics  Universal Analytics(old) 与 Google Analytics（分析）4 均使用 gtag
+gtag:
+  enable: false # 是否启用 gtag
+  id: '' # 请包含 G- 或 UA-
