@@ -1,7 +1,7 @@
 ---
 title: 从 WAF 告警到反控攻击者路由器：一次完整的溯源反制
 date: 2026-06-01
-categories: 文章/漏洞分析
+categories: ["文章", "漏洞分析"]
 tags:
   - 溯源反制
   - 命令注入
@@ -34,7 +34,7 @@ nmap -Pn -sV -p 21,22,23,53,80,443,8080,8443 <攻击者IP>
 
 仅 80 端口开放，运行 HTTP Web 管理界面。
 
-<img src="/wp-content/uploads/2026/img-801533c4aaa7.png">
+<img src="/wp-content/uploads/2026/img-2f797d5f63f6.png">
 
 ### 1.2 Web 界面探测
 
